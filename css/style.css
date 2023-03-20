@@ -485,8 +485,11 @@ header.active .mynavbar {
 .menu-box img {
     width: 75px;
     margin-right: 1.5rem;
+    display: none;
 }
-
+.menu-text {
+    width: 100%;
+}
 .menu-text h3 {
     display: flex;
     justify-content: space-between;
@@ -576,12 +579,14 @@ header.active .mynavbar {
     -webkit-line-clamp: 2;
     overflow: hidden;
     font-size: .8rem;
+    display: none;
 }
 .menu-dish-text span {
     color: var(--yellow);
     font-family: var(--font2);
     font-weight: 700;
     display: block;
+    display: none;
 }
 .menu-dish-img {
     overflow: hidden;
@@ -671,6 +676,7 @@ header.active .mynavbar {
     overflow: hidden;
     font-size: .8rem;
     margin: 0;
+    display: none;
 }
 .choose-box img {
     width: 80px;
