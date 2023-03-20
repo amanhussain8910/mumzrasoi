@@ -7,6 +7,17 @@ $(window).scroll(function(){
 })
 
 $(document).ready(function(){
+    $(".hamburger").click(function(){
+        $("body").addClass("ohidden");
+        $(".overlay").fadeIn();
+        $(".navlist").animate({"left" : "0"});
+    })
+    $(".overlay").click(function(){
+        $("body").removeClass("ohidden");
+        $(".overlay").fadeOut();
+        $(".navlist").animate({"left" : "-220px"});
+    })
+
     $('.menu-dish-slider').slick({
         dots: false,
         arrows: true,
