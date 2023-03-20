@@ -936,4 +936,7 @@ address {
         width: 130px;
         top: -60px;
     }
+    .logo {
+        width: 70px;
+    }
 }
