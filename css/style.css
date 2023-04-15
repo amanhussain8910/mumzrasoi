@@ -787,7 +787,79 @@ address {
 }
 /* end footer */
 
+/* gallery */
+.gallery-box {
+    position: relative;
+    width: calc(100% - 1rem);
+    display: block;
+    margin-bottom: 3rem;
+}
+.gallery-box img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 20px;
+    transition: .3s;
+}
+.gallery-box:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 1rem);
+    border: 1.5px dashed #444444;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+    top: 1rem;
+    left: 2rem;
+    transition: .3s;
+}
+.gallery-box:hover:before {
+    border-color: var(--yellow);
+}
+.gallery-box:hover img {
+    transform: translate(.9rem, .9rem);
+}
+/* end gallery */
 
+/* tiffin */
+.tiffin-box {
+    background-color: #171819;
+    padding: 2rem;
+    border: 2px dashed #3a3a3a;
+    border-radius: 20px;
+    height: 100%;
+}
+.tiffin-box h2 {
+    font-size: 2rem;
+}
+.tiffin-box ul li {
+    font-size: 14px;
+    color: #828282;
+    display: flex;
+    align-items: flex-start;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #272727;
+}
+.tiffin-box ul li span:nth-child(2) {
+    flex: 1;
+}
+.tiffin-box ul li span:first-child {
+    color: #000;
+    width: 56px;
+    margin-right: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1px 5px;
+    background-image: url(../images/icons/yellow-design.png);
+    background-repeat: no-repeat;
+    background-size: 100% 96%;
+    text-align: center;
+}
+.tiffin-box ul li span i {
+    font-style: normal;
+}
+/* end tiffin */
 
 
 
